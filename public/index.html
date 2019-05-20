@@ -20,6 +20,26 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script src="https://gw.alipayobjects.com/os/lib/es6-shim/0.35.5/??es6-sham.min.js,es6-shim.min.js"></script>
+    <script>
+    if (true) {
+      window.Map = window.Map || function() {
+        return {
+          set: function(){}
+        }
+      };
+      window.Set = window.Set || function() {
+        return {
+          set: function(){},
+          has: function(){}
+        }
+      };
+      Object.setPrototypeOf = Object.setPrototypeOf || function(obj, proto) {
+        obj.__proto__ = proto;
+        return obj;
+      };
+    }
+  </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
